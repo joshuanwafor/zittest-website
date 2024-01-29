@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-WyXZaAm8KLXNrC4lnykIRcEjh6c7ONpoCQQNkJujA40OF0kUW8kOMUGu8l+59//p+QLD4lzXv3bUPZtiXbXV8Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      button {
+        border: none;
+        outline: none;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      input:focus {
+        border: none;
+        outline: none;
+      }
+
+      .editor-container {
+        background-color: ghostwhite;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      }
+      .editor-container h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .editor-container section {
+        padding: 16px;
+        border-left: 5px solid #04aa6d;
+        background-color: white;
+      }
+
+      #hero-section {
+        color: white;
+        min-height: 70vh;
+        background-image: url(https://www.w3schools.com/images/lynx_in_space.png),
+          url(https://www.w3schools.com/images/background_in_space.gif);
+        background-repeat: no-repeat, repeat;
+        background-position: 90% 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #hero-section h1 {
+        font-size: 62px;
+        line-height: 0px;
+      }
+
+      #search-area {
+        background-color: white;
+        border-radius: 24px;
+        display: flex;
+        overflow: hidden;
+      }
+
+      .flex {
+        display: flex;
+        padding: 24px;
+        min-height: 50vh;
+        max-width: 70vw;
+        margin: auto;
+      }
+
+      .flex > .flex-content {
+        width: 50%;
+      }
+      .flex > .editor-container {
+        width: 50%;
+      }
+
+      .flex-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn {
+        padding: 12px 16px;
+        border-radius: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero-section">
+      <div>
+        <h1>Learn to Code</h1>
+        <h3>With the world's largest web developer site.</h3>
+        <div id="search-area">
+          <input style="flex: 1; padding: 12px; border: none" />
+          <button
+            style="
+              padding-left: 16px;
+              padding-right: 16px;
+              background-color: #04aa6d;
+              color: white;
+            "
+          >
+            Search
+          </button>
+        </div>
+        <a href="#" style="color: white"><h3>Not Sure Where To Begin?</h3></a>
+      </div>
+    </section>
+
+    <section style="background-color: blanchedalmond">
+      <section class="flex">
+        <div class="flex-content">
+          <h1>HTML</h1>
+          <h3>Language for building web pages</h3>
+          <button class="btn">Learn HTML</button>
+          <button class="btn">Video tutorials</button>
+          <button class="btn">HTML Reference</button>
+          <button class="btn">Get certified</button>
+        </div>
+        <div class="editor-container">
+          <h3>HTML Example:</h3>
+          <section>
+            body { background-color: lightblue; } h1 { color: white; text-align:
+            center; } p { font-family: verdana; }
+          </section>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
